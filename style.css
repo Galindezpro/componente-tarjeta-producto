@@ -56,10 +56,65 @@
 
 .div__texto {
     width: 92%;
+    height: 50%;
     /* border: 1px solid blue; */
     padding: 1.1em;
     background: var(--White);
-    border-radius: 1em 1em 0 0;
+    border-radius: 0 0 1em 1em;
+    position: relative;
+}
+
+.div__texto h3,
+.div__texto h4,
+.div__texto p,
+.div__texto h6 {
+    width: 98%;
+    margin: .51em auto;
     
 }
 
+.div__texto h3 {
+    font-family: var(--font-montserrat);
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: .6em;
+    color: var(--Dark-grayish-blue);
+}
+
+.div__texto h4 {
+    font-family: var(--font-fraunces);
+    font-size: 1.6em;
+    font-weight: 700;
+}
+
+.div__texto p {
+    font-family: var(--font-montserrat);
+    font-size: .6em;
+    letter-spacing: .2em;
+    line-height: 1.5;
+    color: var(--Dark-grayish-blue);
+    
+}
+
+.div__texto h6 {
+    display: inline;
+}
+
+.div__texto .h6__precio-ahora {
+    font-family: var(--font-fraunces);
+    font-size: 1.8em;
+    color: var(--Dark-cyan);
+    font-weight: 700;
+    position: relative;
+    top: .09em;
+    /* border: 1px solid red; */
+}
+
+.div__texto .h6__precio-antes {
+    font-family: var(--font-montserrat);
+    color: var(--Dark-grayish-blue);
+    position: relative;
+    bottom: .2em;
+    left: 1.2em;
+}
