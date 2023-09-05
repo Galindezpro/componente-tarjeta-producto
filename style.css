@@ -22,7 +22,7 @@
 
 .container__principal {
     max-width: 345px;
-    height: 100vh;
+    height: 590px;
     display: flex;
     flex-direction: column;
     /* justify-content: center;
@@ -49,6 +49,7 @@
 
 .div__img .img__mobile {
     width: 100%;
+    height: 100%;
     background: var(--White);
     border-radius: 1em 1em 0 0;
     
@@ -56,7 +57,7 @@
 
 .div__texto {
     width: 92%;
-    height: 50%;
+    height: 100%;
     /* border: 1px solid blue; */
     padding: 1.1em;
     background: var(--White);
@@ -77,21 +78,21 @@
     font-family: var(--font-montserrat);
     font-weight: 500;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: .75em;
     letter-spacing: .6em;
     color: var(--Dark-grayish-blue);
 }
 
 .div__texto h4 {
     font-family: var(--font-fraunces);
-    font-size: 1.6em;
+    font-size: 1.7em;
     font-weight: 700;
 }
 
 .div__texto p {
     font-family: var(--font-montserrat);
-    font-size: .6em;
-    letter-spacing: .2em;
+    font-size: .7em;
+    letter-spacing: .09em;
     line-height: 1.5;
     color: var(--Dark-grayish-blue);
     
@@ -107,7 +108,7 @@
     color: var(--Dark-cyan);
     font-weight: 700;
     position: relative;
-    top: .09em;
+    top: .5em;
     /* border: 1px solid red; */
 }
 
@@ -115,6 +116,68 @@
     font-family: var(--font-montserrat);
     color: var(--Dark-grayish-blue);
     position: relative;
-    bottom: .2em;
+    top: 1em;
     left: 1.2em;
+}
+
+.div__texto button {
+    display: block;
+    position: relative;
+    top: 35px;
+    width: 100%;
+    /* margin-bottom: 100; */
+    height: 40px;
+    border: none;
+    color: var(--White);
+    background: var(--Dark-cyan);
+    border-radius: 10px;
+}
+
+.div__texto button i {
+    margin-right: 1em;
+}
+
+@media screen and (min-width: 600px) {
+    .container__principal {
+        max-width: 700px;
+        height: 600px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .div__img,
+    .div__texto {
+        height: 60%;
+        max-width: 90%;
+        /* border: 1px solid red; */
+        /* margin: 0 auto; */
+    }
+
+    .div__img {
+        margin-left: 1em;
+    }
+    
+    .div__texto {
+        margin-right: 1em;
+        border-radius: 0 1em 1em 0;
+        
+    }
+    
+
+    .div__img .img__mobile {
+        display: none;   
+    }
+
+    .div__img .img__desktop {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        border-radius: 1em 0 0 1em;
+
+    }
+
+    .div__img {
+        margin-top: 0;
+    }
 }
